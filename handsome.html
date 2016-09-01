@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>你心目中的我</title>
+	<style type="text/css">
+	*{padding: 0;margin:0;}
+	body,html{width: 100%;height: 100%;overflow: hidden;}
+	.head{
+		width: 100%;height: 100%;
+		background:url(img/window.jpg)no-repeat;
+		}
+    .btn{    width: 20%;
+    height: 200px;
+    background: #fffcfc;
+    left: 0;
+    top: 35%;
+    content: "";
+    margin: auto;
+    position: relative;
+    border-radius: 3%;
+   box-shadow: 5px 3px 20px #822323;
+}
+.ip1{    width: 26%;
+    height: 30px;
+    position: absolute;
+    left: 13%;
+    top: 43%;
+    border-radius: 20px;
+    box-shadow: 4px 6px 14px #a46969;
+    outline: none;
+    background: #967070;
+cursor: pointer;}
+ .ip2{   width: 26%;
+    height: 30px;
+    position: absolute;
+    left: 59%;
+    top: 43%;
+    border-radius: 20px;
+    box-shadow: 4px 6px 14px #a46969;
+    outline: none;
+    background: #ccc8c8;
+cursor: pointer;}
+
+.p1{
+	font-size: 20px;
+	font-weight: 900;
+	color: #660b0b;;
+	position: absolute;
+	top:20%;
+	left: 23%;
+	text-shadow: 4px 6px 14px #a46969;
+	
+}
+		</style>
+</head>
+<body>
+	<div class="head">
+		<div class="btn">
+		    <p class="p1">你心目中的和平鸽？</p>
+			<input type="button" value="帅" class="ip1">
+			<input type="button" value="不帅" class="ip2">
+		
+		</div>
+	</div>
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript">
+	$(function(){	$(".ip1").click(function(){
+			alert("您真是慧眼识珠，诚实是你最大的优点！");
+		})
+	$(".ip2").click(function(){
+			$(".ip2").val("帅");
+		})
+		$(".ip2").mouseover(function(){
+			 $(".ip2").css({"left": 100*Math.random()+"%",
+			 	"top": 100*Math.random()+"%"}
+			 	);
+
+             
+		})})
+	
+	</script>
+</body>
+</html>
